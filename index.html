@@ -7,30 +7,44 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
+    <header class="page-header">
       <h1>POSTECH - FULLSTACK</h1>
       <span>Desafio Aula Inaugural</span>
-    </div>
-    <div class="card">
+    </header>
+    <main class="card">
       <form id="group-form">
-        <h3>Informações do grupo</h3>
+        <h3>Informações do grupo</h3>
 
-        <label for="nome1">Nome</label>
-        <input type="text" name="nome1" />
-        <label for="nome2">Nome</label>
-        <input type="text" name="nome2" />
-        <label for="nome3">Nome</label>
-        <input type="text" name="nome3" />
-        <label for="nome4">Nome</label>
-        <input type="text" name="nome4" />
-        <label for="nome5">Nome</label>
-        <input type="text" name="nome5" />
+        <div class="field-grid">
+          <div class="field-group">
+            <label for="nome1">Nome</label>
+            <input type="text" name="nome1" id="nome1" placeholder="Integrante 1" />
+          </div>
+          <div class="field-group">
+            <label for="nome2">Nome</label>
+            <input type="text" name="nome2" id="nome2" placeholder="Integrante 2" />
+          </div>
+          <div class="field-group">
+            <label for="nome3">Nome</label>
+            <input type="text" name="nome3" id="nome3" placeholder="Integrante 3" />
+          </div>
+          <div class="field-group">
+            <label for="nome4">Nome</label>
+            <input type="text" name="nome4" id="nome4" placeholder="Integrante 4" />
+          </div>
+          <div class="field-group">
+            <label for="nome5">Nome</label>
+            <input type="text" name="nome5" id="nome5" placeholder="Integrante 5" />
+          </div>
+        </div>
 
-        <label for="historia">História do grupo</label>
-        <textarea name="historia" id="hist"></textarea>
+        <div class="field-group">
+          <label for="historia">História do grupo</label>
+          <textarea name="historia" id="historia" placeholder="Conte a trajetória do time"></textarea>
+        </div>
         <button type="submit">Enviar</button>
       </form>
-    </div>
+    </main>
     <script type="module" src="script.js"></script>
   </body>
 </html>
